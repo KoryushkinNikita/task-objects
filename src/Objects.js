@@ -48,6 +48,5 @@ export function objectClone(obj, count) {
     el['id'] = i
     clowns.push(el)
   }
-  if (count === 0) return NULL;
-  else return clowns
+  return clowns
 }
