@@ -8,8 +8,8 @@
   Объект после манипуляций следует вернуть в качестве результата работы функции.
 */
 export function personUpdate(data) {
-    if (data.gender == 'female') if (data.hasOwnProperty('age')) delete data.age
-    if (data.gender == 'male') if (!data.hasOwnProperty('income')) data['income'] = 100000
+    if (data.gender === 'female') if (data.hasOwnProperty('age')) delete data.age
+    if (data.gender === 'male') if (!data.hasOwnProperty('income')) data['income'] = 100000
     return data
 }
 
@@ -48,6 +48,6 @@ export function objectClone(obj, count) {
     el['id'] = i
     clowns.push(el)
   }
-  if (count == 0) return NULL;
+  if (count === 0) return NULL;
   else return clowns
 }
